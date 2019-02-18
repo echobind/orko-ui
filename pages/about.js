@@ -1,4 +1,5 @@
-import { DefaultLayout } from "../layouts/Default";
+import React from 'react';
+import { DefaultLayout } from '../layouts/Default';
 
 const Index = () => (
   <DefaultLayout
