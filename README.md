@@ -38,4 +38,4 @@ You should now access the application at [http://localhost:3000](http://localhos
 
 <br><br>
 
-<p align="center">Made with ❤️by <a href="https://echobind.com/" target="_blank">echo/bind</a>.</p>
+<p align="center">Made with ❤️ by <a href="https://echobind.com/" target="_blank">echo/bind</a>.</p>
