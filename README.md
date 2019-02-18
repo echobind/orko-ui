@@ -1,6 +1,6 @@
-## Orko UI
+<h1 align="center" style="border-bottom: none;">🚀 Orko UI  🚀</h1>
 
-This repo is the user interface for project orko's web access
+Manage your inventory in a breeze.
 
 ## Installation
 
