@@ -1,7 +1,14 @@
+import { DefaultLayout } from "../layouts/Default";
+
 const Index = () => (
-  <div>
-    <p>Hello Next.js</p>
-  </div>
+  <DefaultLayout
+    render={({ Header }) => (
+      <>
+        <h1>Home Page</h1>
+        <Header />
+      </>
+    )}
+  />
 );
 
 export default Index;

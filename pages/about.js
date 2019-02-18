@@ -1,5 +1,14 @@
-export default () => (
-  <div>
-    <h1>About Orko</h1>
-  </div>
+import { DefaultLayout } from "../layouts/Default";
+
+const Index = () => (
+  <DefaultLayout
+    render={({ Header }) => (
+      <>
+        <h1>About Page</h1>
+        <Header />
+      </>
+    )}
+  />
 );
+
+export default Index;
