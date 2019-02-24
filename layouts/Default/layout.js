@@ -5,5 +5,5 @@ import PropTypes from 'prop-types';
 export const DefaultLayout = ({ render }) => <div>{render({ Header })}</div>;
 
 DefaultLayout.propTypes = {
-  render: PropTypes.function
+  render: PropTypes.func
 };
