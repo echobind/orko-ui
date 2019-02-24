@@ -1,26 +1,16 @@
 import React from 'react';
 import { DefaultLayout } from '../layouts/Default';
+import { Inventory } from '../services/inventory';
+import { Personnel } from '../services/personnel';
+import { Manufacturers } from '../services/manufacturers';
 
-// eslint-disable-next-line
-const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
+(async () => {
+  const inventory = await Inventory.fetch();
+  const personnel = await Personnel.fetch();
+  const manufacturers = await Manufacturers.fetch();
 
-const fetchInventory = async () => {
-  const response = await fetch(
-    'https://api.airtable.com/v0/appu5RedhRnKd7bwJ/Product Inventory',
-    {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${AIRTABLE_API_KEY}`
-      }
-    }
-  );
-
-  const json = await response.json();
-
-  console.log(json);
-};
-
-fetchInventory();
+  console.log({ inventory, personnel, manufacturers });
+})();
 
 const Index = () => (
   <DefaultLayout
