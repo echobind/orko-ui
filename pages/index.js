@@ -4,7 +4,23 @@ import { DefaultLayout } from '../layouts/Default';
 // eslint-disable-next-line
 const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
 
-console.log('API KEY! ', AIRTABLE_API_KEY);
+const fetchInventory = async () => {
+  const response = await fetch(
+    'https://api.airtable.com/v0/appu5RedhRnKd7bwJ/Product Inventory',
+    {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${AIRTABLE_API_KEY}`
+      }
+    }
+  );
+
+  const json = await response.json();
+
+  console.log(json);
+};
+
+fetchInventory();
 
 const Index = () => (
   <DefaultLayout
