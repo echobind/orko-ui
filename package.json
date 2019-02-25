@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/echobind/orko-ui#readme",
   "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
     "airtable": "^0.5.9",
     "next": "^8.0.1",
     "react": "^16.8.2",
