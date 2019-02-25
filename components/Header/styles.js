@@ -1,5 +1,9 @@
 import styled from '@emotion/styled';
 
+export const Container = styled.div`
+  margin: 1rem 0;
+`;
+
 export const Navigation = styled.nav`
   margin: 1rem 0;
   padding: 1rem 0;

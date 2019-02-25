@@ -1,9 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'next/link';
-import { Navigation } from './styles';
+import { Container, Navigation } from './styles';
 
-export const Header = () => (
-  <div>
+export const Header = ({ title }) => (
+  <Container>
+    <h1>{title}</h1>
     <Navigation>
       <Link href="/">
         <a>Home</a>
@@ -12,5 +14,9 @@ export const Header = () => (
         <a>About</a>
       </Link>
     </Navigation>
-  </div>
+  </Container>
 );
+
+Header.propTypes = {
+  title: PropTypes.string
+};

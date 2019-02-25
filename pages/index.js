@@ -27,8 +27,7 @@ const Index = () => {
     <DefaultLayout
       render={({ Header }) => (
         <>
-          <h1>Home Page</h1>
-          <Header />
+          <Header title="Home Page" />
           {isLoading && <strong>Loading...</strong>}
           {!isLoading &&
             data.inventory.records.map(r => (
