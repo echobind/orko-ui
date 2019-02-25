@@ -23,8 +23,6 @@ const Index = () => {
     fetchData();
   }, []);
 
-  console.log(data);
-
   return (
     <DefaultLayout
       render={({ Header }) => (
